@@ -25,7 +25,7 @@ def encode(password):
     return convert
 
 def decode():
-    pass
+	pass
 
 value = True
 def main():
