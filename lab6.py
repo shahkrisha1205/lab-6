@@ -60,7 +60,7 @@ def main():
             print("Your password has been encoded and stored!\n")
             new_password = encode(password)
         elif option == 2:
-            pass
+            print("The encoded password is ", new_password, ", and the original password is ", password, sep="")
         elif option == 3:
             break
 
