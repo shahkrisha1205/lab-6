@@ -25,7 +25,30 @@ def encode(password):
     return convert
 
 def decode():
-	pass
+    convert = ""
+    for i in range(len(new_password)):
+        if str(new_password[i]) == "0":
+            digit = "7"
+        elif str(new_password[i]) == "1":
+            digit = "8"
+        elif str(new_password[i]) == "2":
+            digit = "9"
+        elif str(new_password[i]) == "3":
+            digit = "0"
+        elif str(new_password[i]) == "4":
+            digit = "1"
+        elif str(new_password[i]) == "5":
+            digit = "2"
+        elif str(new_password[i]) == "6":
+            digit = "3"
+        elif str(new_password[i]) == "7":
+            digit = "4"
+        elif str(new_password[i]) == "8":
+            digit = "5"
+        elif str(new_password[i]) == "9":
+            digit = "6"
+        convert += digit
+    return convert
 
 value = True
 def main():
@@ -37,7 +60,7 @@ def main():
             print("Your password has been encoded and stored!\n")
             new_password = encode(password)
         elif option == 2:
-            print("The encoded password is ", new_password, ", and the original password is ", passowrd, sep="")
+            pass
         elif option == 3:
             break
 
